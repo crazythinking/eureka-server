@@ -1,0 +1,19 @@
+spring:  
+  application:
+    name: eureka-register-server
+
+management:
+  security:
+    enabled: false
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:7070/eureka/
+      #,http://eureka2:7071/eureka/
+      #,http://eureka3:7072/eureka/
+      #http://${spring.cloud.client.ipAddress}:7070/eureka/
+#    region: china-east-1 #设置注册中心所在的Region；默认“default”
+#    availability-zones: #设置指定的zone，可以设置多个；
+  server:
+    enable-self-preservation: false #在本地进行开发调试的时候，关闭保护机制，以确保注册中心可以将不可用的实例剔除
