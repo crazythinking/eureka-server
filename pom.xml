@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.engining.project</groupId>
 		<artifactId>project-parent</artifactId>
-		<version>3.2-SNAPSHOT</version>
+		<version>3.3-SNAPSHOT</version>
 	</parent>
 
 	<groupId>net.engining.cloud</groupId>
@@ -21,13 +21,14 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- spring cloud -->
 			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-parent</artifactId>
-				<version>Dalston.SR3</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-dependencies</artifactId>
+	            <version>Edgware.SR4</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+        	</dependency>
 		</dependencies>
 	</dependencyManagement>
 
