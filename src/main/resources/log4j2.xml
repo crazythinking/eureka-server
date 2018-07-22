@@ -4,7 +4,7 @@
     <properties>
         <!-- 日志路径 -->
         <!-- 可设置jvm参数: ${sys:log.path.prefix}-->
-        <property name="LOG_HOME">d:/logs/</property>
+        <property name="LOG_HOME">./logs/</property>
         <!-- 日志输入级别 -->
         <property name="level">INFO</property>
     </properties>
