@@ -8,8 +8,10 @@ management:
     
 eureka:
   client:
+#   register-with-eureka: false #是否要注册到服务器端，因为此处为Eureka Server，所以设定为false
+#   fetch-registry: false  #是否从服务器端取得注册信息，因为此处为Eureka Server，所以设定为false
     service-url:
-      defaultZone: http://eureka1:7070/eureka/
+      defaultZone: http://192.168.253.1:7070/eureka/
       #,http://eureka2:7071/eureka/
       #,http://eureka3:7072/eureka/
       #http://${spring.cloud.client.ipAddress}:7070/eureka/
